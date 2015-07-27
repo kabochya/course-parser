@@ -9,5 +9,5 @@ npm install
 node main.js
 ```
 
-The results will be in the "course-parser" db, "course" collection.s
+The results will be in the "course-parser" db, "course" collection.
 
