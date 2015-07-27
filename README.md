@@ -1,8 +1,13 @@
-Prerequisites:
+#NTU Classroom course data parser
+Fetches NTU course data from [https://gra206.aca.ntu.edu.tw/classrm/
+]()
+
+##Prerequisites:
 
 * Phantom.js
 * Mongo.db
 
+##Installation
 ```
 git clone git@github.com:kabochya/course-parser.git
 npm install
