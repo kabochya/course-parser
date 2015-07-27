@@ -9,8 +9,6 @@ var url = 'mongodb://localhost:27017/course-parser';
 
 var courseUrl = "https://gra206.aca.ntu.edu.tw/classrm/WebCRUse.aspx",
     hash = [];
-//var count = 892;
-
 horseman
 .on('consoleMessage', function( msg ){
   console.log(msg);
@@ -28,12 +26,10 @@ list = list.replace(/\n/g,'').split('\t');
 
 MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
-  //for(var count = 0;count!=1; ++count){
   for(var count = 1;count<list.length; ++count){
     console.log("Current Page: "+count+"/"+"Total Pages: "+(list.length-1));
     var res =
     horseman
-    //.select('#ctl00_ContentPlaceHolder1_dropRm',"口生所討論室")
     .select('#ctl00_ContentPlaceHolder1_dropRm',list[count])
     .click('#ctl00_ContentPlaceHolder1_Button1')
     .waitForNextPage()
