@@ -5,7 +5,7 @@ Fetches NTU course data from [https://gra206.aca.ntu.edu.tw/classrm/
 ##Prerequisites:
 
 * Phantom.js
-* Mongo.db
+* Mongodb
 
 ##Installation
 ```
